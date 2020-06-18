@@ -1,0 +1,47 @@
+.myHeader {
+padding-top:40px;
+padding-bottom:40px;
+background-color:#eee;
+text-align: center;
+}
+
+.myContainer {
+padding-right:15px;
+padding-left:15px;
+}
+
+.row {
+margin-top:5px;
+display: flex; /*A flex container expands items to fill available free space or shrinks them to prevent overflow*/
+}
+
+.imgContainer {
+width:50%;
+padding: 0 15px;
+position: relative; /*is positioned relative to its normal position*/
+float: left;
+text-align:center;
+}
+
+.imgSettings {
+padding:4px;
+border: 1px solid #ddd;
+border-radius:4px;
+}
+
+.buton {
+width:100%;
+color:#333;
+background-color:#eee;
+font-weight:bold;
+text-align:center;
+text-decoration:none;
+cursor:pointer;
+padding: 6px 12px;
+font-size:14px;
+border-radius:4px;
+}
+
+body {
+margin:0;
+}
