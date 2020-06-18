@@ -1,0 +1,72 @@
+.myHeader {
+	padding-top:40px;
+	padding-bottom:40px;
+	background-color:#eee;
+	text-align: center;
+}
+
+.myNavbar {
+	background-color: #eee;
+	border-color:#e7e7e7;
+	border-width:1px;
+	position: fixed;
+	margin-bottom:20px;
+	min-height:50px;
+	border: 1px solid;
+}
+
+.littleDisplay {
+	border-radius: 10px;  
+	padding: 5px; 
+	width: 150px; 
+	height: 110px;
+	display: block; 
+}
+
+#thumbnails {
+	margin-down: 50px;
+	display: flex; /*A flex container expands items to fill available free space or shrinks them to prevent overflow*/
+    flex-direction: row;
+    justify-content: space-around; /*se pune spatiu intre elemente*/
+}
+
+#bigDisplay {
+	width:400px;
+}
+
+
+body {
+	text-align: center;
+}
+
+body .mainPage {
+text-decoration:none;
+}	
+
+  /* Wrap the image and alt text */
+
+.alt-wrap { 
+    display: block;
+	position: relative;
+    color: whitesmoke; 
+}
+
+/* The alt text itself */
+.alt-wrap p.alt {
+	position: absolute; /*elementul se aseaza relativ la primul element parinte*/
+	opacity: 0; /* hide initially */
+	left: 0; right: 0; bottom: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: rgba(0,0,0,0.8);
+	
+}
+
+  /* Hovering over the wrapper shows its alt p. It gets all the p children from class .altwrap and it will display the alt attribute with oppacity 1  */
+.alt-wrap:hover > p.alt { 
+    opacity: 1; 
+}
+
+
+

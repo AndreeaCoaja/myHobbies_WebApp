@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Locuri</title>
+        <link rel="stylesheet" type="text/css" href="lab5.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            var srcArray = new Array("zidchinezesc.jpg", "petra.jpg", "statuieRio.jpg", "machupicchu.jpg", "piramida.jpg", "coloseum.jpg", "tajmahal.jpg");
+
+            var altArray = new Array("Zid Chinezesc", "petra", "statuieRio", "machupicchu", "piramida", "coloseum", "tajmahal");
+
+            function onHover(position) {
+                var bigImage = document.getElementById("bigDisplay");
+                bigImage.src = srcArray[position];
+                bigImage.alt = altArray[position];
+            }
+
+            window.onload = function () {
+                document.getElementById("zero").onmouseover = function () {
+                    onHover(0);
+                };
+                document.getElementById("one").onmouseover = function () {
+                    onHover(1);
+                };
+                document.getElementById("two").onmouseover = function () {
+                    onHover(2);
+                };
+                document.getElementById("three").onmouseover = function () {
+                    onHover(3);
+                };
+                document.getElementById("four").onmouseover = function () {
+                    onHover(4);
+                };
+                document.getElementById("five").onmouseover = function () {
+                    onHover(5);
+                };
+                document.getElementById("six").onmouseover = function () {
+                    onHover(6);
+                };
+
+                $(".littleDisplay").wrap('<div class="alt-wrap"/>');
+
+                // Add alt text after each .littleDisplay
+                // 1. For all items with class .img...
+                // 2. Run a function for each of them...
+                // 3. To add a p element after it
+                // 5. Containing that element's alt text
+                $(".littleDisplay").each(function () {
+                    $(this).after('<p class="alt">' + $(this).attr("alt") + "</p>");
+                });
+            };
+        </script>
+    </head>
+
+    <body>
+                <ul class="navList">
+                    <li><a href="http://localhost/Traveling/lab5.html">Traveling</a></li>
+					 <li><a href="http://localhost:8081/trying_war_exploded/">Contact me</a></li>
+                    <li><a class="nav-link" href="http://www.scs.ubbcluj.ro/~caig0228/examen.html">Back to Hobbys</a></li>
+                </ul>
+        <header class="myHeader">
+		    <h1>My traveling wish list</h1>
+        </header>
+
+        <div id="thumbnails">
+            <a target="_blank" href="zidchinezesc.jpg">
+                <img id="zero" class="littleDisplay" src="zidchinezesc.jpg" alt="Zid Chinezesc" />
+            </a>
+            <a target="_blank" href="petra.jpg">
+                <img id="one" class="littleDisplay" src="petra.jpg" alt="Orasul Petra" />
+            </a>
+            <a target="_blank" href="statuieRio.jpg">
+                <img id="two" class="littleDisplay" src="statuieRio.jpg" alt="Statuia din Rio de Janeiro - Christ the Redeemer" />
+            </a>
+            <a target="_blank" href="machupicchu.jpg">
+                <img id="three" class="littleDisplay" src="machupicchu.jpg" alt="Machu Picchu" />
+            </a>
+            <a target="_blank" href="piramida.jpg">
+                <img id="four" class="littleDisplay" src="piramida.jpg" alt="Marea Piramidă din Giza" />
+            </a>
+            <a target="_blank" href="coloseum.jpg">
+                <img id="five" class="littleDisplay" src="coloseum.jpg" alt="Coloseum" />
+            </a>
+            <a target="_blank" href="tajmahal.jpg">
+                <img id="six" class="littleDisplay" src="tajmahal.jpg" alt="Taj Mahal" />
+            </a>
+        </div>
+
+        <div>
+            <img id="bigDisplay" src="zidchinezesc.jpg" alt="Zid Chinezesc" />
+			
+        </div>
+        <p id="text"></p>
+    </body>
+</html>

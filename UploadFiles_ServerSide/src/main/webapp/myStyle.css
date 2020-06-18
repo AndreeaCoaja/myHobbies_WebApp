@@ -1,0 +1,85 @@
+body {
+	margin:0;
+}
+
+.myContainer {
+padding-right:15px;
+padding-left:15px;
+}
+
+.myHeader {
+	padding-top:40px;
+	padding-bottom:40px;
+	background-color:#eee;
+	text-align: center;
+}
+
+
+.navList {
+	background-color: #eeeeee8f;
+	list-style:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+
+.navList>li {
+	display:inline-block;
+	margin-left:0;
+	float:left;
+}
+
+.navList>li>a {
+	display:block;
+	padding:14px 16px;
+	text-decoration:none;
+	color: Black;
+	font-size:20px;
+	text-align: center;
+	margin-top:10px;
+	font-weight: bold;
+}
+
+button {
+	background-color: #eee;
+	border-color: #eeeeee8f;
+	display:inline-block;
+	margin-top:10px;
+	font-weight:400;
+	text-align:center;
+	cursor:pointer;
+	padding:6px 12px;
+	font-size:14px;
+	border-radius:4px;
+}
+
+.myTable {
+	border: 1px solid #ddd;
+	width:100%;
+	max-width:100%;
+	margin-bottom:20px;
+	background-color:transparent;
+	border-collapse: collapse;
+}
+
+.myForm {
+	margin:15px 0px;
+}
+
+th {
+	height:50px;
+}
+
+td{
+	height:50px;
+}
+
+td>span {
+text-decoration:underline;	
+cursor:pointer;
+}
+
+#filter {
+	margin-top:10px;
+}
